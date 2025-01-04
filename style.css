@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin:0;
+    background-color: #7b66af;
+}
+
+
+.header{
+    display: flex;
+    background-color: #67578f;
+    height: 85px;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width:100%;
+}
+
+/* .logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+} */
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(244, 245, 161); 
+    
+}
+
+.menu-bar{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    padding-right: 40px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.menu-bar > a:hover{
+    color: rgb(244, 245, 161);
+}
+.menu-bar > a{
+    font-weight: 550;
+}
+
+/*******************    content section         ****************/
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100dvh;
+}
+
+.body-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    width:80%;
+}
+
+.text-content{
+    margin: 10px;
+}
+.text-content > p {
+    width:80%;
+    color: white;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+.text-content > h4{
+    margin-bottom: 6px;
+    color: white;
+}
+
+.text-content > h1{
+    margin-bottom: 6px;
+    color: white;
+}
+
+.but{
+    border: none;
+    border-radius: 5px;
+    background-color: #ead4b8;
+    padding: 10px 14px;
+    margin-top: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.but:hover{
+    background-color: #f0e3d7;  
+}
+
+.profile{
+    border-radius: 300px;
+}
+
+
+
+/**************** keyframes animations ***************/
