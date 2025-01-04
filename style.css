@@ -1,7 +1,10 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
+
 
 body{
     margin:0;
@@ -115,6 +118,81 @@ body{
     border-radius: 300px;
 }
 
+img{
+    border:1px solid #ead4b8;
+    padding: 12px;
+}
+
+/*********** about Page ************/
+
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.aboutme-content{
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    gap: 20px;
+}
+
+.aboutme-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:350px;
+    
+}
+
+.aboutme{
+    border:1px solid #ead4b8;
+    border-radius: 10px;
+    gap: 20px;
+    color: white;
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #67578f;
+}
+.aboutme-content > h2{
+    color: rgb(221, 223, 124);
+}
+
+.aboutme > p {
+    font-size:1rem;
+    padding: 8px;
+}
+
+.skills{
+    width: 30%;
+    height: 100%;
+    border:2px solid #ead4b8;
+    border-radius: 10px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #67578f;
+
+}
+
+/* .skills > img{
+    border:1px solid #ead4b8;
+    padding: 12px;
+} */    
+
+.logo-pic{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
 
 
-/**************** keyframes animations ***************/
+/*********** project Page ************/
