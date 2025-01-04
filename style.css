@@ -20,6 +20,7 @@ body{
     align-items: center;
     position:fixed;
     width:100%;
+    z-index: 99;
 }
 
 /* .logo{
@@ -61,7 +62,8 @@ body{
 }
 
 .menu-bar > a{
-    font-weight: 550;
+    font-weight: 500;
+    color: #3b344c;
 }
 
 /*******************    content section         ****************/
@@ -123,7 +125,7 @@ body{
     border-radius: 300px;
 }
 
-img{
+.profile-pic > img{
     border:1px solid #ead4b8;
     padding: 12px;
 }
@@ -143,6 +145,21 @@ img{
     flex-direction: column;
     width:80%;
     gap: 20px;
+}
+
+.about-h2{
+    position: relative;
+}
+
+.about-h2::before{
+    content:"";
+    position: absolute;
+    background-color: #ead4b8;
+    width:80px;
+    height: 3px;
+    z-index: 1;
+    bottom: -4px;
+
 }
 
 .aboutme-inner{
@@ -201,3 +218,98 @@ img{
 
 
 /*********** project Page ************/
+
+#projects{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.proj-wrap{
+    display: flex;
+    justify-content: start;
+}
+
+.proj-name {
+    position: relative;
+    color:rgb(221, 223, 124);
+}
+
+.proj-name::before{
+    content:"";
+    position: absolute;
+    width:80px;
+    height:3px;
+    background-color: #ead4b8;
+    z-index: 1;
+    bottom: -4px;
+}
+
+
+.projects-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+.project-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #ead4b8;
+    background-color: #67578f;
+    padding: 30px;
+    border-radius: 10px;
+}
+.project1-desc > p, .project2-desc > p, .project3-desc > p{ 
+    width:80%;
+}
+
+.project1-desc , .project2-desc, .project3-desc{  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.project-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #ead4b8;
+    background-color: #67578f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.project-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #ead4b8;
+    background-color: #67578f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.project11-img, .project33-img{
+    border-radius: 100px;
+}
+
+.project22-img{
+    border-radius: 100px;
+    object-fit: center;
+}
+
+.proj-wrap{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap:20px;
+    width:80%;
+}
