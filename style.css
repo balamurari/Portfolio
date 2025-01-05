@@ -313,3 +313,97 @@ body{
     gap:20px;
     width:80%;
 }
+
+
+/*********** contact Page ************/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+
+.contact-h1{
+    position: relative;
+    color:rgb(221, 223, 124);
+    padding-top: 50px;
+}
+
+.contact-h1::before{
+    content:"";
+    position: absolute;
+    width:80px;
+    height:3px;
+    background-color: #ead4b8;
+    z-index: 1;
+    bottom: -4px;
+}
+
+.contact-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    border: 3px solid #ead4b8;
+    border-radius: 10px;
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100%;
+    width: 40%;
+}
+
+.contact-form > form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    padding: 20px;
+}
+
+form > .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group > textarea {
+    height: 100px;
+    border: 1px solid #ead4b8;
+    border-radius: 5px;
+}
+
+.form-group > input{
+    padding: 10px;
+    border: 1px solid #ead4b8;
+    border-radius: 5px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    width: 30%;
+    padding: 20px;
+
+}
+
+.social-links > a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.submit{
+    width:100px;
+}
