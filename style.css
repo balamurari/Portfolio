@@ -23,15 +23,6 @@ body{
     z-index: 99;
 }
 
-/* .logo{
-    display: flex;
-    flex-direction: row;
-    padding-left: 30px;
-    width:40px;
-    height:40px;
-    cursor: pointer;
-} */
-
 .logo{
     display: flex;
     flex-direction: row;
@@ -50,11 +41,10 @@ body{
     padding-right: 40px;
     cursor: pointer;
     font-size: 1.1rem;
-    color: white;
 }
 
 .menu-bar > a:hover{
-    color: rgb(244, 245, 161);
+    color: #ead4b8;
 }
 
 .menu-bar > a:link{
@@ -63,7 +53,7 @@ body{
 
 .menu-bar > a{
     font-weight: 500;
-    color: #3b344c;
+    color: rgb(244, 245, 161);
 }
 
 /*******************    content section         ****************/
@@ -138,6 +128,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    padding-top: 100px;
 }
 
 .aboutme-content{
@@ -224,6 +215,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-top: 100px;
 }
 
 .proj-wrap{
@@ -321,7 +313,6 @@ body{
     display: flex;
     flex-direction: column;
     padding: 50px;
-
 }
 
 .contact-h1{
@@ -349,6 +340,7 @@ body{
     margin-top: 20px;
     border: 3px solid #ead4b8;
     border-radius: 10px;
+    background-color: #67578f;
 }
 
 .contact-form{
@@ -377,12 +369,16 @@ form > .form-group{
     height: 100px;
     border: 1px solid #ead4b8;
     border-radius: 5px;
+    resize: none;
+    padding-left: 10px;
+    outline: none;
 }
 
 .form-group > input{
     padding: 10px;
     border: 1px solid #ead4b8;
     border-radius: 5px;
+    outline: none;
 }
 
 .social-links{
@@ -406,4 +402,19 @@ form > .form-group{
 
 .submit{
     width:100px;
+}
+
+.phone , .gmail , .github , .linkedin{
+    background-color: #ead4b8;
+    border-radius: 5px;
+    border: 3px solid #ead4b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+}
+
+.phone:hover , .gmail:hover , .github:hover , .linkedin:hover{
+    background-color: #f0e3d7;
 }
